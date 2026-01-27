@@ -1,7 +1,7 @@
 -- Task 1
 
 -- Enable readable output format
-.mode columns
+.mode table
 .headers on
 
 -- Instructions for students:
@@ -13,3 +13,12 @@
 -- write your sql code here
 
 SELECT * from countries;
+SELECT Country, Population FROM countries;
+SELECT Country FROM countries WHERE Continent = 'Europe';
+SELECT Country FROM countries WHERE Population > 100000000;
+SELECT Country FROM countries WHERE Continent = 'Asia' AND GDPPerCapita > 20000;
+SELECT Country FROM countries WHERE LiteracyPercent > 0.7;
+SELECT Country FROM countries WHERE CoastlineRatio = 0;
+SELECT Country FROM countries WHERE Country LIKE 'A%';
+SELECT Country FROM countries WHERE Country LIKE '%United%';
+SELECT Country FROM countries WHERE Birthrate > Deathrate AND Population > 50000000;

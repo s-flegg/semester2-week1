@@ -1,7 +1,7 @@
 -- Task 3
 
 -- Enable readable output format
-.mode columns
+.mode table
 .headers on
 
 -- Instructions for students:
@@ -11,5 +11,6 @@
 
 
 -- write your sql code here
+-- SELECT * from countries;
 
-SELECT * from countries;
+SELECT COUNT(*) FROM countries; -- can also count Country, same result
