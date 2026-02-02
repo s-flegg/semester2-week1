@@ -1,5 +1,5 @@
 -- Enable readable output format
-.mode columns
+.mode table
 .headers on
 
 -- Instructions for students:
@@ -8,3 +8,5 @@
 -- 3. Exit SQLite: .exit
 
 -- Use this file to test things out, follow allow with classwork, etc.
+
+SELECT Continent, SUM(Population) FROM countries GROUP BY Continent;
